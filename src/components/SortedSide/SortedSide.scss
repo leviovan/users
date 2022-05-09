@@ -1,0 +1,25 @@
+
+.sort{
+    flex: 1 1 30%;
+    max-width: 152px;
+    width: 100%;
+    padding-top: 35px;
+    padding-left: 20px;
+    background: #BDBDBD;
+    float: left;
+
+    min-height: 150px;
+    &__title{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+    }
+}
+.sort :first-child{
+    margin-bottom: 15px;
+}
+.sort :last-child{
+    margin-top: 15px;
+}

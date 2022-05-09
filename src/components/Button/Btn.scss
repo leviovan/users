@@ -1,0 +1,16 @@
+
+.btn{
+    display: inline-block;
+    background: #4B51EF;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    float: left;
+    color: #FFFFFF;
+    overflow: hidden
+}
+
+input[disabled=disabled], input:disabled {
+    color: rgba(0, 0, 0, 0.3);
+}
