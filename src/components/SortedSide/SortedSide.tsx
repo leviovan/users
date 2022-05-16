@@ -13,9 +13,9 @@ const  SortedSide=()=> {
     <div className="sort">
         <h3 className="sort__title">Сортировка</h3>
 
-        <Btn callback={() => dispatch(sortedByAddress())}text="По городу" />
+        <Btn color="blue" callback={() => dispatch(sortedByAddress())}text="по городу" />
         
-        <Btn callback={() => dispatch(sortedByCompany())} text="По компании" />
+        <Btn color="blue" callback={() => dispatch(sortedByCompany())} text="по компании" />
     </div>
   )
 }

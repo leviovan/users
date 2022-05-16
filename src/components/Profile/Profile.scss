@@ -1,19 +1,23 @@
 .profile{
     height: 100%;
     width:  440px;
-    margin: 0 auto;
+    margin-left: 35px;
     padding-top: 10px;
-    padding-left: 16px;
+    &__form{
+        margin-bottom: 10px;
+    }
     &__header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 10px
     }
     &__container{
         background: #FFFFFF;
         border: 1px solid #F3F3F3;
         border-radius: 8px;
         padding: 10px 12px;
+        margin-bottom: 10px;
     }
     &__titleItems{
         font-style: normal;
@@ -33,10 +37,27 @@
         font-size: 10px;
         line-height: 12px;
         padding: 5px 10px;
+        width: 210px;
+    }
+    &__textarea{
+        width: 420px;
+        height: 55px;
+        resize: vertical;
+    }
+    &__submit{
+        float: right;
+        color: #FFFFFF;
+        background: #52CF4F;
+        border-radius: 5px;
+        padding: 5px 8px 5px 15px;
     }
 }
 
 .redBorder{
     border: red 1px solid;
     border-radius: 8px;
+}
+
+button[disabled=disabled], button:disabled {
+    background: #AFAFAF;
 }

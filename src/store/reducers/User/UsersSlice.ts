@@ -16,7 +16,7 @@ const initialState: IState = {
     users: [],
     error: null,
     activeUser: 0,
-    editProofile: false,
+    editProofile: true,
 }
 
 export const getUsers = createAsyncThunk('get/users',
@@ -45,13 +45,10 @@ const userSlice = createSlice({
             state.users = state.users.sort((a: IUser, b: IUser) => (a.address.city.localeCompare(b.address.city)));
         },
         setUser(state, action) {
-            console.log(action.payload);
-
             state.activeUser = action.payload;
         },
-        toogleEdit(state) {
-         console.log(state.editProofile);
-            state.editProofile = !state.editProofile;
+        toogleEdit(state,action) {
+            state.editProofile = action.payload;
         },
 
     },
